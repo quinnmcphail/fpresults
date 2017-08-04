@@ -1,0 +1,103 @@
+@import 'https://cdnjs.cloudflare.com/ajax/libs/bulma/0.1.0/css/bulma.css';
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.agPlace1 span{
+  background-color: rgba(201, 137, 16, .3);
+  border-radius: 25px;
+  padding: 6px;
+}
+
+.agPlace2 span{
+  background-color: rgba(168, 168, 168, .3);
+  border-radius: 25px;
+  padding: 6px;
+}
+
+.agPlace3 span{
+  background-color: rgba(150, 90, 56, .3);
+  border-radius: 25px;
+  padding: 6px;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden
+}
+
+#devModeOverlay {
+  display: none;
+  background: #000;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#fplogo {
+  max-width: 100%;
+  width: 75%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cross-fade-leave {
+  opacity: 1;
+}
+.cross-fade-leave.cross-fade-leave-active {
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+
+.cross-fade-enter {
+  opacity: 0;
+}
+.cross-fade-enter.cross-fade-enter-active {
+  opacity: 1;
+  transition: opacity 1s ease-in;
+}
+
+.cross-fade-height {
+  transition: height .5s ease-in-out;
+}
+
+#info-column,
+#info-column * {
+  margin: 0;
+  padding: 0;
+}
+
+#info-column {
+  margin-left: -10px;
+  height: calc(100vh + 10px);
+  position: relative;
+}
+
+#spotify {
+  position: absolute;
+  bottom: 0;
+  padding: 10px;
+  width: 100%;
+  background-color: black;
+}
+
+#spotify-img {
+  margin: 10px;
+  height: 75px;
+  width: 75px;
+}
+
+.spotify-info {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
