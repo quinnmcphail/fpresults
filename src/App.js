@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import axios from 'axios';
-import url from 'url';
+// import url from 'url';
 import './App.css';
-import * as Logo from './logo.svg';
+// import * as Logo from './logo.svg';
 import Repeat from 'repeat';
 import ReactCSSTransitionReplace from 'react-css-transition-replace';
 
