@@ -1,1 +1,1 @@
-React implementation of scrolling race results using React.
+Implementation of scrolling race results using React.
