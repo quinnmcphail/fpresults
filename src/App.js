@@ -2,7 +2,9 @@ import React, {Component} from 'react';
 import axios from 'axios';
 // import url from 'url';
 import './App.css';
-// import * as Logo from './logo.svg';
+import * as Logo from './resultsBack.svg';
+import * as fpLogo from './fpLogo.svg';
+import * as bulldog from './bulldog.png';
 import Repeat from 'repeat';
 import ReactCSSTransitionReplace from 'react-css-transition-replace';
 
@@ -22,25 +24,25 @@ class App extends Component {
       results: [[]],
       current_results_page: 0,
       fields: [[]],
-      eventID: 79685,
+      eventID: 104486,
       eventName: null
     }
   }
-  refreshToken = () => {
-    axios
-      .get('https://radiant-forest-25626.herokuapp.com/refreshTokens', {
-      params: {
-        refresh_token: this.state.refresh_token
-      }
-    })
-      .then(e => {
-        this.setState({access_token: e.data.access_token, expires_in: e.data.expires_in})
-        setTimeout(this.refreshToken, this.state.expires_in * 1000)
-      })
-      .catch(err => {
-        console.error(err)
-      })
-  }
+  // refreshToken = () => {
+  //   axios
+  //     .get('https://radiant-forest-25626.herokuapp.com/refreshTokens', {
+  //     params: {
+  //       refresh_token: this.state.refresh_token
+  //     }
+  //   })
+  //     .then(e => {
+  //       this.setState({access_token: e.data.access_token, expires_in: e.data.expires_in})
+  //       setTimeout(this.refreshToken, this.state.expires_in * 1000)
+  //     })
+  //     .catch(err => {
+  //       console.error(err)
+  //     })
+  // }
   componentDidMount() {
     // if (url.parse(window.location.href, true).query.code !== undefined) {
     //   localStorage.setItem('spotify-auth-code', url.parse(window.location.href, true).query.code)
@@ -83,12 +85,17 @@ class App extends Component {
     // }
     let that = this
     Repeat(function (done) {
+      // let id = url.parse(window.location.href, true).query.id;
+      // that.setState({
+      //   eventID: id
+      // })
       axios
         .get('https://radiant-forest-25626.herokuapp.com/results/'+that.state.eventID)
         .then(e => {
           let fields = []
           let results = []
           let resultsArray=[]
+          var h = Math.round(Math.max(document.documentElement.clientHeight, window.innerHeight || 0)/51)-1;
           e
             .data
             .list
@@ -111,7 +118,7 @@ class App extends Component {
               return temp
             })
           while(resultsArray.length>0){
-            results.push(resultsArray.splice(0,14))
+            results.push(resultsArray.splice(0,h))
           }
           that.setState({fields, results})
           done()
@@ -147,7 +154,8 @@ class App extends Component {
       .in(12, 'sec')
   }
   render() {
-    return this.state.spotify_auth
+    // return this.state.results[this.state.current_results_page]
+    return true
       ? <div className="container is-fluid" style={{margin:0}}>
           <div className="columns">
             <div className="column is-three-quarters">
@@ -167,36 +175,40 @@ class App extends Component {
                       <tbody id="results">
                       {this.state.results[this.state.current_results_page] ?
                       this
-                        .state
-                        .results[this.state.current_results_page]
-                        .map((e,index) => {
-                          return <tr key={`row-${index}`}>{e.map((i,index) => {
-                              return <td key={`cell-${index}`} className={this.state.fields[index]==='Age Group Place'?`agPlace${i}`:null}>
-                                <span>{i}</span>
-                              </td>
-                            })}</tr>
-                        }):<tr><td>Results Not Available</td></tr>}
+                      .state
+                      .results[this.state.current_results_page]
+                      .map((e,index) => {
+                        return <tr key={`row-${index}`}>{e.map((i,index) => {
+                            return <td key={`cell-${index}`} className={this.state.fields[index]==='Age Group Place'?`agPlace${i}`:null}>
+                              <span>{i}</span>
+                            </td>
+                          })}</tr>
+                      }):<tr><td>Results Not Available</td></tr>}
                     </tbody>
                   </table>
                   </ReactCSSTransitionReplace>
               </div>
             </div>
             <div id="info-column" className="column has-text-centered is-one-quarter">
-              <img src='https://131events.com/wp-content/uploads/2017/03/FroYoRun-land-w-300.png' style={{marginTop: '20px', width: '300px', backgroundColor: 'rgb(247, 153, 58)', borderRadius: '5px'}} alt=''/>
-              <h1 className="title is-3">{this.state.eventName}</h1>
-              <h2 className="subtitle is-5">Results</h2>
+              <img src='https://131events.com/wp-content/uploads/2016/02/ectm-sq.png' style={{marginTop: '20px', width: '300px'}} alt=''key="eventImage"/>
+              <h1 className="title is-3" style={{marginTop: '20px'}} key="eventName">Eagle Creek Trail Marathon</h1>
+              {/* <h1 className="title is-3" key="raceName"></h1> */}
+              <h2 className="subtitle is-5" key="eventResults">Results</h2>
               {/* <div id="spotify">
                 <h2 className="title is-5" style={{color:'#1ED760'}}><i className="fa fa-spotify" aria-hidden="true"></i> Now Playing</h2>
                 <img id="spotify-img" src={this.state.current_track_img} alt=''/>
                 <h3 className="title is-6 spotify-info" style={{color:'white'}}>{this.state.current_track_name}</h3>
-                <h3 className="title is-6 spotify-info" style={{color:'white'}}>{this.state.current_track_artist}</h3>
+                <h3 className="title is-6 spotify-info" style={{color:'white',marginBottom:'5px'}}>{this.state.current_track_artist}</h3>
               </div> */}
+              <div id="texting">
+                <img style={{height: '50px'}}src="https://131events.com/wp-content/uploads/2016/02/131-events-logo-250.png" alt=""/>
+                <h2 className="title is-5" style={{color:'white'}}><i className="fa fa-mobile" aria-hidden="true"></i> Texting <i className="fa fa-mobile" aria-hidden="true"></i></h2>
+                <h3 className="title is-5 spotify-info" style={{color:'white'}}>Text your bib # to 317-316-8001</h3>
+              </div>
             </div>
           </div>
         </div>
-      : <div>
-        Loading
-      </div>
+      : <img src={Logo} alt="background"/>
   }
 }
 

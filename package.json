@@ -12,12 +12,13 @@
     "gh-pages": "^1.0.0",
     "react-scripts": "1.0.7"
   },
+  "homepage": "https://quinnmcphail.github.io/fpresults",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build",
+    "predeploy": "yarn run build",
     "deploy": "gh-pages -d build"
   }
 }
