@@ -69,17 +69,17 @@ body {
   transition: height .5s ease-in-out;
 }
 
-#info-column,
+/* #info-column,
 #info-column * {
   margin: 0;
   padding: 0;
-}
+} */
 
-#info-column {
+/* #info-column {
   margin-left: -10px;
   height: calc(100vh + 10px);
   position: relative;
-}
+} */
 
 #spotify {
   position: absolute;

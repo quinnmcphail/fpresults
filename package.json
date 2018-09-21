@@ -5,12 +5,14 @@
   "dependencies": {
     "axios": "^0.16.1",
     "react": "^15.5.4",
+    "react-css-transition-replace": "^3.0.3",
     "react-dom": "^15.5.4",
+    "react-transition-group": "^1.2.1",
     "repeat": "^0.0.6"
   },
   "devDependencies": {
     "gh-pages": "^1.0.0",
-    "react-scripts": "1.0.7"
+    "react-scripts": "^1.1.5"
   },
   "homepage": "https://quinnmcphail.github.io/fpresults",
   "scripts": {
