@@ -24,7 +24,7 @@ class App extends Component {
       results: [[]],
       current_results_page: 0,
       fields: [[]],
-      eventID: 104486,
+      eventID: 107690,
       eventName: null
     }
   }
@@ -190,8 +190,8 @@ class App extends Component {
               </div>
             </div>
             <div id="info-column" className="column has-text-centered is-one-quarter">
-              <img src='https://131events.com/wp-content/uploads/2016/02/ectm-sq.png' style={{marginTop: '20px', width: '300px'}} alt=''key="eventImage"/>
-              <h1 className="title is-3" style={{marginTop: '20px'}} key="eventName">Eagle Creek Trail Marathon</h1>
+              <img src='https://2tr8so2439vc34xre1h2sdi1-wpengine.netdna-ssl.com/wp-content/uploads/2017/07/donut-logo-600.png' style={{marginTop: '20px', width: '300px'}} alt=''key="eventImage"/>
+              <h1 className="title is-3" style={{marginTop: '20px'}} key="eventName">Donut Judge Me 5K</h1>
               {/* <h1 className="title is-3" key="raceName"></h1> */}
               <h2 className="subtitle is-5" key="eventResults">Results</h2>
               {/* <div id="spotify">

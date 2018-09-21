@@ -90,7 +90,7 @@ body {
 }
 
 #texting {
-  position: absolute;
+  /* position: absolute; */
   bottom: 0;
   padding: 10px;
   width: 100%;
