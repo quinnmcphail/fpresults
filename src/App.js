@@ -22,7 +22,7 @@ class App extends Component {
       results: [[]],
       current_results_page: 0,
       fields: [[]],
-      eventID: 107822,
+      eventID: 108322,
       eventName: null
     }
   }
@@ -183,7 +183,7 @@ class App extends Component {
             </div>
             <div id="info-column" className="column has-text-centered is-one-quarter">
               {/* <img src='https://131events.com/wp-content/uploads/2017/03/FroYoRun-land-w-300.png' style={{marginTop: '20px', width: '300px', backgroundColor: 'rgb(247, 153, 58)', borderRadius: '5px'}} alt=''/> */}
-              <h1 className="title is-3">BACA Bolt For Autism 5K</h1>
+              <h1 className="title is-3">Trojan Trot 5K</h1>
               <h2 className="subtitle is-5">Results</h2>
               {/* <div id="spotify">
                 <h2 className="title is-5" style={{color:'#1ED760'}}><i className="fa fa-spotify" aria-hidden="true"></i> Now Playing</h2>
