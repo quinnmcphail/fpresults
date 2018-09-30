@@ -111,7 +111,7 @@ class App extends Component {
             .map(e => {
               let temp = e
               temp.shift()
-              if (temp[3] === '-1') {
+              if (temp[3] === -1) {
                 temp[3] = 'TOP OVERALL'
               }
               return temp
