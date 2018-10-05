@@ -2,8 +2,8 @@ import React, {Component} from 'react';
 import axios from 'axios';
 // import url from 'url';
 import * as Logo from './resultsBack.svg';
-import * as fpLogo from './fpLogo.svg';
-import * as bulldog from './bulldog.png';
+// import * as fpLogo from './fpLogo.svg';
+// import * as bulldog from './bulldog.png';
 import Repeat from 'repeat';
 import ReactCSSTransitionReplace from 'react-css-transition-replace';
 
