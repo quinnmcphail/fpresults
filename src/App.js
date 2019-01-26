@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import axios from "axios";
 // import url from 'url';
 import * as Logo from "./resultsBack.svg";
-import * as winterNight from "./winterNight.png";
+// import * as winterNight from "./winterNight.png";
 // import * as fpLogo from './fpLogo.svg';
 // import * as bulldog from './bulldog.png';
 import Repeat from "repeat";
@@ -24,7 +24,7 @@ class App extends Component {
       results: [[]],
       current_results_page: 0,
       fields: [[]],
-      eventID: 115754,
+      eventID: 116654,
       eventName: null
     };
   }
@@ -217,7 +217,7 @@ class App extends Component {
             className="column has-text-centered is-one-quarter"
           >
             <img
-              src={winterNight}
+              src="https://2tr8so2439vc34xre1h2sdi1-wpengine.netdna-ssl.com/wp-content/uploads/2018/09/she-power-fierce-strong-brave.png"
               style={{ marginTop: "20px", width: "300px" }}
               alt=""
               key="eventImage"
@@ -227,7 +227,7 @@ class App extends Component {
               style={{ marginTop: "20px" }}
               key="eventName"
             >
-              Winter Night Run
+              She Power Half Marathon &amp; 5K
             </h1>
             {/* <h1 className="title is-3" key="raceName"></h1> */}
             <h2 className="subtitle is-5" key="eventResults">
