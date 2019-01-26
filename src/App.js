@@ -5,6 +5,7 @@ import * as Logo from "./resultsBack.svg";
 // import * as winterNight from "./winterNight.png";
 // import * as fpLogo from './fpLogo.svg';
 // import * as bulldog from './bulldog.png';
+import * as shePower from "./shePower.png";
 import Repeat from "repeat";
 import ReactCSSTransitionReplace from "react-css-transition-replace";
 
@@ -217,7 +218,7 @@ class App extends Component {
             className="column has-text-centered is-one-quarter"
           >
             <img
-              src="https://2tr8so2439vc34xre1h2sdi1-wpengine.netdna-ssl.com/wp-content/uploads/2018/09/she-power-fierce-strong-brave.png"
+              src={shePower}
               style={{ marginTop: "20px", width: "300px" }}
               alt=""
               key="eventImage"
