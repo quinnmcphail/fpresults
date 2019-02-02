@@ -5,7 +5,7 @@ import * as Logo from "./resultsBack.svg";
 // import * as winterNight from "./winterNight.png";
 // import * as fpLogo from './fpLogo.svg';
 // import * as bulldog from './bulldog.png';
-import * as shePower from "./shePower.png";
+import * as wtfiesta from "./wtfiesta.png";
 import Repeat from "repeat";
 import ReactCSSTransitionReplace from "react-css-transition-replace";
 
@@ -25,7 +25,7 @@ class App extends Component {
       results: [[]],
       current_results_page: 0,
       fields: [[]],
-      eventID: 116654,
+      eventID: 117168,
       eventName: null
     };
   }
@@ -218,7 +218,7 @@ class App extends Component {
             className="column has-text-centered is-one-quarter"
           >
             <img
-              src={shePower}
+              src={wtfiesta}
               style={{ marginTop: "20px", width: "300px" }}
               alt=""
               key="eventImage"
@@ -228,7 +228,7 @@ class App extends Component {
               style={{ marginTop: "20px" }}
               key="eventName"
             >
-              She Power Half Marathon &amp; 5K
+              Winter Trail Fiesta
             </h1>
             {/* <h1 className="title is-3" key="raceName"></h1> */}
             <h2 className="subtitle is-5" key="eventResults">
