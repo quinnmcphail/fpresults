@@ -82,7 +82,7 @@ class App extends Component {
       .start.in(12, "sec");
   }
   render() {
-    return false ? (
+    return this.state.results[this.state.current_results_page] ? (
       <div className="container is-fluid" style={{ margin: 0 }}>
         <div className="columns">
           <div className="column is-three-quarters">
