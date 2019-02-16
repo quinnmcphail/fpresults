@@ -1,11 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
-// import url from 'url';
 import * as Logo from "./resultsBack.svg";
-// import * as winterNight from "./winterNight.png";
-// import * as fpLogo from './fpLogo.svg';
-// import * as bulldog from './bulldog.png';
-import * as wtfiesta from "./wtfiesta.png";
 import Repeat from "repeat";
 import ReactCSSTransitionReplace from "react-css-transition-replace";
 
@@ -25,71 +20,13 @@ class App extends Component {
       results: [[]],
       current_results_page: 0,
       fields: [[]],
-      eventID: 117168,
+      eventID: 118148,
       eventName: null
     };
   }
-  // refreshToken = () => {
-  //   axios
-  //     .get('https://radiant-forest-25626.herokuapp.com/refreshTokens', {
-  //     params: {
-  //       refresh_token: this.state.refresh_token
-  //     }
-  //   })
-  //     .then(e => {
-  //       this.setState({access_token: e.data.access_token, expires_in: e.data.expires_in})
-  //       setTimeout(this.refreshToken, this.state.expires_in * 1000)
-  //     })
-  //     .catch(err => {
-  //       console.error(err)
-  //     })
-  // }
   componentDidMount() {
-    // if (url.parse(window.location.href, true).query.code !== undefined) {
-    //   localStorage.setItem('spotify-auth-code', url.parse(window.location.href, true).query.code)
-    // }
-    // if (localStorage.getItem('spotify-auth-code') !== null) {
-    //   axios
-    //     .get('https://radiant-forest-25626.herokuapp.com/getTokens', {
-    //     params: {
-    //       code: localStorage.getItem('spotify-auth-code')
-    //     }
-    //   })
-    //     .then(e => {
-    //       localStorage.setItem('spotify-tokens', JSON.stringify(e.data))
-    //       this.setState({access_token: e.data.access_token, expires_in: e.data.expires_in, refresh_token: e.data.refresh_token, spotify_auth: true})
-    //       this.refreshToken()
-    //       let that = this
-    //       Repeat(function (done) {
-    //         console.log('test')
-    //         axios
-    //           .get('https://radiant-forest-25626.herokuapp.com/playing', {
-    //           params: {
-    //             access_token: that.state.access_token
-    //           }
-    //         })
-    //           .then(e => {
-    //             done();
-    //             that.setState({current_track: e.data.item, is_playing: e.data.is_playing, current_track_img: e.data.item.album.images[1].url, current_track_artist: e.data.item.artists[0].name, current_track_name: e.data.item.name})
-    //           })
-    //           .catch(err => {
-    //             console.log(err)
-    //           })
-    //         })
-    //         .every(5, 'sec')
-    //         .start
-    //         .now()
-    //     })
-    //     .catch(err => {
-    //       console.error(err)
-    //     })
-    // }
     let that = this;
     Repeat(function(done) {
-      // let id = url.parse(window.location.href, true).query.id;
-      // that.setState({
-      //   eventID: id
-      // })
       axios
         .get(
           "https://radiant-forest-25626.herokuapp.com/results/" +
@@ -132,18 +69,6 @@ class App extends Component {
     })
       .every(5, "sec")
       .start.now();
-    // Repeat(function(done){
-    //   axios.get('https://radiant-forest-25626.herokuapp.com/eventName/'+that.state.eventID).then(e=>{
-    //     console.log(e)
-    //     that.setState({eventName: e.data})
-    //     done()
-    //   }).catch(err=>{
-    //     console.error(err)
-    //   })
-    // })
-    // .every(30, 'sec')
-    // .start
-    // .now()
     Repeat(function() {
       if (that.state.results.length - 1 > that.state.current_results_page) {
         that.setState({
@@ -218,7 +143,7 @@ class App extends Component {
             className="column has-text-centered is-one-quarter"
           >
             <img
-              src={wtfiesta}
+              src="https://2tr8so2439vc34xre1h2sdi1-wpengine.netdna-ssl.com/wp-content/uploads/2018/01/zoyo-circle-logo-1592x1600.jpg"
               style={{ marginTop: "20px", width: "300px" }}
               alt=""
               key="eventImage"
@@ -228,18 +153,11 @@ class App extends Component {
               style={{ marginTop: "20px" }}
               key="eventName"
             >
-              Winter Trail Fiesta
+              ZOYO FroYo 5K
             </h1>
-            {/* <h1 className="title is-3" key="raceName"></h1> */}
             <h2 className="subtitle is-5" key="eventResults">
               Results
             </h2>
-            {/* <div id="spotify">
-                <h2 className="title is-5" style={{color:'#1ED760'}}><i className="fa fa-spotify" aria-hidden="true"></i> Now Playing</h2>
-                <img id="spotify-img" src={this.state.current_track_img} alt=''/>
-                <h3 className="title is-6 spotify-info" style={{color:'white'}}>{this.state.current_track_name}</h3>
-                <h3 className="title is-6 spotify-info" style={{color:'white',marginBottom:'5px'}}>{this.state.current_track_artist}</h3>
-              </div> */}
             <div id="texting">
               <img
                 style={{ height: "50px" }}
