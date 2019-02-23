@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
+import * as wtfLogo from "./wtfLogo.png";
 import * as Logo from "./resultsBack.svg";
 import Repeat from "repeat";
 import ReactCSSTransitionReplace from "react-css-transition-replace";
@@ -20,7 +21,7 @@ class App extends Component {
       results: [[]],
       current_results_page: 0,
       fields: [[]],
-      eventID: 118148,
+      eventID: 118581,
       eventName: null
     };
   }
@@ -143,7 +144,7 @@ class App extends Component {
             className="column has-text-centered is-one-quarter"
           >
             <img
-              src="https://2tr8so2439vc34xre1h2sdi1-wpengine.netdna-ssl.com/wp-content/uploads/2018/01/zoyo-circle-logo-1592x1600.jpg"
+              src={wtfLogo}
               style={{ marginTop: "20px", width: "300px" }}
               alt=""
               key="eventImage"
@@ -153,7 +154,7 @@ class App extends Component {
               style={{ marginTop: "20px" }}
               key="eventName"
             >
-              ZOYO FroYo 5K
+              Winter Trail Frosty
             </h1>
             <h2 className="subtitle is-5" key="eventResults">
               Results
