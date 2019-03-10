@@ -21,17 +21,17 @@ class App extends Component {
       results: [[]],
       current_results_page: 0,
       fields: [[]],
-      eventID: 118581,
+      eventID: 119761,
       eventName: null
     };
   }
   componentDidMount() {
     let that = this;
-    Repeat(function(done) {
+    Repeat(function (done) {
       axios
         .get(
           "https://radiant-forest-25626.herokuapp.com/results/" +
-            that.state.eventID
+          that.state.eventID
         )
         .then(e => {
           let fields = [];
@@ -70,7 +70,7 @@ class App extends Component {
     })
       .every(5, "sec")
       .start.now();
-    Repeat(function() {
+    Repeat(function () {
       if (that.state.results.length - 1 > that.state.current_results_page) {
         that.setState({
           current_results_page: that.state.current_results_page + 1
@@ -116,7 +116,7 @@ class App extends Component {
                                     key={`cell-${index}`}
                                     className={
                                       this.state.fields[index] ===
-                                      "Age Group Place"
+                                        "Age Group Place"
                                         ? `agPlace${i}`
                                         : null
                                     }
@@ -130,10 +130,10 @@ class App extends Component {
                         }
                       )
                     ) : (
-                      <tr>
-                        <td>Results Not Available</td>
-                      </tr>
-                    )}
+                        <tr>
+                          <td>Results Not Available</td>
+                        </tr>
+                      )}
                   </tbody>
                 </table>
               </ReactCSSTransitionReplace>
@@ -144,7 +144,7 @@ class App extends Component {
             className="column has-text-centered is-one-quarter"
           >
             <img
-              src={wtfLogo}
+              src="https://2tr8so2439vc34xre1h2sdi1-wpengine.netdna-ssl.com/wp-content/uploads/2016/02/lucky-logo-250w.png"
               style={{ marginTop: "20px", width: "300px" }}
               alt=""
               key="eventImage"
@@ -154,7 +154,7 @@ class App extends Component {
               style={{ marginTop: "20px" }}
               key="eventName"
             >
-              Winter Trail Frosty
+              Lucky Clover Run
             </h1>
             <h2 className="subtitle is-5" key="eventResults">
               Results
@@ -180,8 +180,8 @@ class App extends Component {
         </div>
       </div>
     ) : (
-      <img src={Logo} alt="background" />
-    );
+        <img src={Logo} alt="background" />
+      );
   }
 }
 
