@@ -21,7 +21,7 @@ class App extends Component {
       results: [[]],
       current_results_page: 0,
       fields: [[]],
-      eventID: 122856,
+      eventID: 124177,
       eventName: null
     };
   }
@@ -162,7 +162,7 @@ class App extends Component {
             <div id="texting">
               <img
                 style={{ height: "50px" }}
-                src="https://131events.com/wp-content/uploads/2016/02/131-events-logo-250.png"
+                src="https://2tr8so2439vc34xre1h2sdi1-wpengine.netdna-ssl.com/wp-content/uploads/2019/02/hakuna-5k-logo.png"
                 alt=""
               />
               <h2 className="title is-5" style={{ color: "white" }}>
