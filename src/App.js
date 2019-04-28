@@ -144,8 +144,8 @@ class App extends Component {
             className="column has-text-centered is-one-quarter"
           >
             <img
-              src={donutLogo}
-              style={{ marginTop: "20px", width: "300px" }}
+              src="https://2tr8so2439vc34xre1h2sdi1-wpengine.netdna-ssl.com/wp-content/uploads/2019/02/hakuna-5k-logo.png"
+              style={{ marginTop: "20px", width: "300px", backgroundColor: black }}
               alt=""
               key="eventImage"
             />
@@ -162,7 +162,7 @@ class App extends Component {
             <div id="texting">
               <img
                 style={{ height: "50px" }}
-                src="https://2tr8so2439vc34xre1h2sdi1-wpengine.netdna-ssl.com/wp-content/uploads/2019/02/hakuna-5k-logo.png"
+                src="https://131events.com/wp-content/uploads/2016/02/131-events-logo-250.png"
                 alt=""
               />
               <h2 className="title is-5" style={{ color: "white" }}>
