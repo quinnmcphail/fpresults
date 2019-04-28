@@ -145,7 +145,7 @@ class App extends Component {
           >
             <img
               src="https://2tr8so2439vc34xre1h2sdi1-wpengine.netdna-ssl.com/wp-content/uploads/2019/02/hakuna-5k-logo.png"
-              style={{ marginTop: "20px", width: "300px", backgroundColor: black }}
+              style={{ marginTop: "20px", width: "300px", backgroundColor: "black" }}
               alt=""
               key="eventImage"
             />
