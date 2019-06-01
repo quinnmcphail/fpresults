@@ -22,7 +22,7 @@ class App extends Component {
       results: [[]],
       current_results_page: 0,
       fields: [[]],
-      eventID: 116096,
+      eventID: 127589,
       eventName: null
     }
   }
@@ -182,8 +182,8 @@ class App extends Component {
             </div>
           </div>
           <div id="info-column" className="column has-text-centered is-one-quarter">
-            <img src='https://static1.squarespace.com/static/597d36d9197aea062b6ec7ad/598740b18419c22ddf2c2bd1/5c544892085229926936a9af/1551477693170/SCR+300dpi.jpg?format=1500w' style={{ marginTop: '20px', width: '300px' }} alt='' />
-            <h1 className="title is-3">Spring Clean 5K</h1>
+            <img src='https://www.childadvocates.net/wp-content/uploads/SHR2019-3-1170x1024.jpg' style={{ marginTop: '20px', width: '300px' }} alt='' />
+            <h1 className="title is-3">Child Advocates SuperHero Run</h1>
             <h2 className="subtitle is-5">Results</h2>
             {/* <div id="spotify">
                 <h2 className="title is-5" style={{color:'#1ED760'}}><i className="fa fa-spotify" aria-hidden="true"></i> Now Playing</h2>
