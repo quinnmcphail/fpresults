@@ -21,7 +21,7 @@ class App extends Component {
       results: [[]],
       current_results_page: 0,
       fields: [[]],
-      eventID: 133233,
+      eventID: 133760,
       eventName: null
     };
   }
@@ -144,7 +144,7 @@ class App extends Component {
             className="column has-text-centered is-one-quarter"
           >
             <img
-              src={summerLogo}
+              src="https://131events.com/wp-content/uploads/2017/07/donut-logo-600.png"
               style={{ marginTop: "20px", width: "300px" }}
               alt=""
               key="eventImage"
@@ -154,7 +154,7 @@ class App extends Component {
               style={{ marginTop: "20px" }}
               key="eventName"
             >
-              Eagle Creek Trail Marathon
+              Donut Judge Me 5K
             </h1>
             <h2 className="subtitle is-5" key="eventResults">
               Results
