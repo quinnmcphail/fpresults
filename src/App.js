@@ -21,7 +21,7 @@ class App extends Component {
       results: [[]],
       current_results_page: 0,
       fields: [[]],
-      eventID: 133798,
+      eventID: 139926,
       eventName: null
     };
   }
@@ -144,7 +144,7 @@ class App extends Component {
             className="column has-text-centered is-one-quarter"
           >
             <img
-              src="https://131events.com/wp-content/uploads/2017/07/donut-logo-600.png"
+              src="https://131events.com/wp-content/uploads/2019/06/brew-halloween-logo-2019.jpg"
               style={{ marginTop: "20px", width: "300px" }}
               alt=""
               key="eventImage"
@@ -154,7 +154,7 @@ class App extends Component {
               style={{ marginTop: "20px" }}
               key="eventName"
             >
-              Donut Judge Me 5K
+              Brew HaHa Halloween 5K
             </h1>
             <h2 className="subtitle is-5" key="eventResults">
               Results
