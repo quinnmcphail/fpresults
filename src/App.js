@@ -21,7 +21,7 @@ class App extends Component {
       results: [[]],
       current_results_page: 0,
       fields: [[]],
-      eventID: 142213,
+      eventID: 143661,
       eventName: null
     };
   }
@@ -144,7 +144,7 @@ class App extends Component {
             className="column has-text-centered is-one-quarter"
           >
             <img
-              src="https://131events.com/wp-content/uploads/2016/11/honor-the-brave-logo.png"
+              src="https://131events.com/wp-content/uploads/2019/07/strut-logo-2019.jpg"
               style={{ marginTop: "20px", width: "300px" }}
               alt=""
               key="eventImage"
@@ -154,7 +154,7 @@ class App extends Component {
               style={{ marginTop: "20px" }}
               key="eventName"
             >
-              Honor the Brave 5K
+              Strut Your Stuffing 5K
             </h1>
             <h2 className="subtitle is-5" key="eventResults">
               Results
