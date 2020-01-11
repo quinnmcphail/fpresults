@@ -21,7 +21,7 @@ class App extends Component {
       results: [[]],
       current_results_page: 0,
       fields: [[]],
-      eventID: 145316,
+      eventID: 146447,
       eventName: null
     };
   }
@@ -144,7 +144,7 @@ class App extends Component {
             className="column has-text-centered is-one-quarter"
           >
             <img
-              src={caribbean}
+              src="https://131events.com/wp-content/uploads/2019/08/winter-night-logo.jpg"
               style={{ marginTop: "20px", width: "300px" }}
               alt=""
               key="eventImage"
@@ -154,7 +154,7 @@ class App extends Component {
               style={{ marginTop: "20px" }}
               key="eventName"
             >
-              Caribbean Christmas 5K
+              Winter Night Trail Run
             </h1>
             <h2 className="subtitle is-5" key="eventResults">
               Results
