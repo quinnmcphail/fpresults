@@ -21,7 +21,7 @@ class App extends Component {
       results: [[]],
       current_results_page: 0,
       fields: [[]],
-      eventID: 149304,
+      eventID: 149850,
       eventName: null
     };
   }
@@ -144,7 +144,7 @@ class App extends Component {
             className="column has-text-centered is-one-quarter"
           >
             <img
-              src="https://131events.com/wp-content/uploads/2016/02/run4love-sq.png"
+              src="https://131events.com/wp-content/uploads/2019/08/wtf-logo-2020-transparent.png"
               style={{ marginTop: "20px", width: "300px" }}
               alt=""
               key="eventImage"
@@ -154,7 +154,7 @@ class App extends Component {
               style={{ marginTop: "20px" }}
               key="eventName"
             >
-              Run4Love 5K
+              Winter Trail Frosty
             </h1>
             <h2 className="subtitle is-5" key="eventResults">
               Results
