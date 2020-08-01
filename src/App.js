@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
-import * as lucky from "./lucky.jpg";
+import * as lucky from "./eagle.png";
 import * as Logo from "./resultsBack.svg";
 import Repeat from "repeat";
 import ReactCSSTransitionReplace from "react-css-transition-replace";
@@ -21,19 +21,19 @@ class App extends Component {
       results: [[]],
       current_results_page: 0,
       fields: [[]],
-      eventID: 151077,
-      eventName: null
+      eventID: 156069,
+      eventName: null,
     };
   }
   componentDidMount() {
     let that = this;
-    Repeat(function(done) {
+    Repeat(function (done) {
       axios
         .get(
           "https://radiant-forest-25626.herokuapp.com/results/" +
             that.state.eventID
         )
-        .then(e => {
+        .then((e) => {
           let fields = [];
           let results = [];
           let resultsArray = [];
@@ -44,13 +44,13 @@ class App extends Component {
                 window.innerHeight || 0
               ) / 51
             ) - 1;
-          e.data.list.Fields.map(e => {
+          e.data.list.Fields.map((e) => {
             if (e.Label === "agPlace") {
               e.Label = "Age Group Place";
             }
             return fields.push(e.Label);
           });
-          resultsArray = e.data.data.map(e => {
+          resultsArray = e.data.data.map((e) => {
             let temp = e;
             temp.shift();
             if (temp[3] == -1) {
@@ -64,16 +64,16 @@ class App extends Component {
           that.setState({ fields, results });
           done();
         })
-        .catch(err => {
+        .catch((err) => {
           console.error(err);
         });
     })
       .every(5, "sec")
       .start.now();
-    Repeat(function() {
+    Repeat(function () {
       if (that.state.results.length - 1 > that.state.current_results_page) {
         that.setState({
-          current_results_page: that.state.current_results_page + 1
+          current_results_page: that.state.current_results_page + 1,
         });
       } else {
         that.setState({ current_results_page: 0 });
