@@ -154,7 +154,7 @@ class App extends Component {
               style={{ marginTop: "20px" }}
               key="eventName"
             >
-              Lucky Clover 4-Miler
+              Eagle Creek Trail Marathon
             </h1>
             <h2 className="subtitle is-5" key="eventResults">
               Results
