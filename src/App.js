@@ -53,8 +53,11 @@ class App extends Component {
           resultsArray = e.data.data.map((e) => {
             let temp = e;
             temp.shift();
-            if (temp[3] == -1) {
+            if (temp[3] === "-1") {
               temp[3] = "TOP OVERALL";
+            }
+            if (temp[2].length > 17) {
+              temp[2] = `${temp[2].substring(0, 17)}...`;
             }
             return temp;
           });
