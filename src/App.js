@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
-// import * as summerNight from "./summerNight.png";
+import * as honor from "./honor.png";
 import * as Logo from "./resultsBack.svg";
 import Repeat from "repeat";
 import ReactCSSTransitionReplace from "react-css-transition-replace";
@@ -21,7 +21,7 @@ class App extends Component {
       results: [[]],
       current_results_page: 0,
       fields: [[]],
-      eventID: 161599,
+      eventID: 162507,
       eventName: null,
     };
   }
@@ -147,7 +147,7 @@ class App extends Component {
             className="column has-text-centered is-one-quarter"
           >
             <img
-              src="https://www.131events.com/wp-content/uploads/2019/06/brew-halloween-logo-2019.jpg"
+              src={honor}
               style={{ marginTop: "20px", width: "300px" }}
               alt=""
               key="eventImage"
@@ -157,7 +157,7 @@ class App extends Component {
               style={{ marginTop: "20px" }}
               key="eventName"
             >
-              Brew HaHa Halloween 5K
+              Honor the Brave 5K
             </h1>
             <h2 className="subtitle is-5" key="eventResults">
               Results
