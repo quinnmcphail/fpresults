@@ -21,7 +21,7 @@ class App extends Component {
       results: [[]],
       current_results_page: 0,
       fields: [[]],
-      eventID: 162507,
+      eventID: 162684,
       eventName: null,
     };
   }
@@ -44,18 +44,18 @@ class App extends Component {
                 window.innerHeight || 0
               ) / 51
             ) - 1;
-          e.data.list.Fields.map((e) => {
-            if (e.Label === "agPlace") {
-              e.Label = "Age Group Place";
-            }
-            return fields.push(e.Label);
-          });
+          // e.data.list.Fields.map((e) => {
+          //   if (e.Label === "agPlace") {
+          //     e.Label = "Age Group Place";
+          //   }
+          //   return fields.push(e.Label);
+          // });
           resultsArray = e.data.data.map((e) => {
             let temp = e;
             temp.shift();
-            if (temp[3] === "-1") {
-              temp[3] = "TOP OVERALL";
-            }
+            // if (temp[3] === "-1") {
+            //   temp[3] = "TOP OVERALL";
+            // }
             if (temp[2].length > 17) {
               temp[2] = `${temp[2].substring(0, 17)}...`;
             }
@@ -115,15 +115,7 @@ class App extends Component {
                             <tr key={`row-${index}`}>
                               {e.map((i, index) => {
                                 return (
-                                  <td
-                                    key={`cell-${index}`}
-                                    className={
-                                      this.state.fields[index] ===
-                                      "Age Group Place"
-                                        ? `agPlace${i}`
-                                        : null
-                                    }
-                                  >
+                                  <td key={`cell-${index}`}>
                                     <span>{i}</span>
                                   </td>
                                 );
@@ -147,7 +139,7 @@ class App extends Component {
             className="column has-text-centered is-one-quarter"
           >
             <img
-              src={honor}
+              src="https://www.131events.com/wp-content/uploads/2019/07/strut-logo-2019.jpg"
               style={{ marginTop: "20px", width: "300px" }}
               alt=""
               key="eventImage"
@@ -157,7 +149,7 @@ class App extends Component {
               style={{ marginTop: "20px" }}
               key="eventName"
             >
-              Honor the Brave 5K
+              Strut Your Stuffing 5K
             </h1>
             <h2 className="subtitle is-5" key="eventResults">
               Results
