@@ -44,12 +44,12 @@ class App extends Component {
                 window.innerHeight || 0
               ) / 51
             ) - 1;
-          e.data.list.Fields.map((e) => {
-            // if (e.Label === "agPlace") {
-            //   e.Label = "Age Group Place";
-            // }
-            return fields.push(e.Label);
-          });
+          // e.data.list.Fields.map((e) => {
+          //   if (e.Label === "agPlace") {
+          //     e.Label = "Age Group Place";
+          //   }
+          //   return fields.push(e.Label);
+          // });
           resultsArray = e.data.data.map((e) => {
             let temp = e;
             temp.shift();
