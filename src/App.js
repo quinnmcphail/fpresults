@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
-import * as winter from "./wtfLogo.png";
+import * as winter from "./lucky.jpg";
 import * as Logo from "./resultsBack.svg";
 import Repeat from "repeat";
 import ReactCSSTransitionReplace from "react-css-transition-replace";
@@ -21,7 +21,7 @@ class App extends Component {
       results: [[]],
       current_results_page: 0,
       fields: [[]],
-      eventID: 166244,
+      eventID: 166906,
       eventName: null,
     };
   }
@@ -157,7 +157,7 @@ class App extends Component {
               style={{ marginTop: "20px" }}
               key="eventName"
             >
-              Winter Trail Frosty
+              Lucky Clover Run
             </h1>
             <h2 className="subtitle is-5" key="eventResults">
               Results
