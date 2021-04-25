@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
-import * as winter from "./lucky.jpg";
+import * as froyo from "./froyo.svg";
 import * as Logo from "./resultsBack.svg";
 import Repeat from "repeat";
 import ReactCSSTransitionReplace from "react-css-transition-replace";
@@ -21,7 +21,7 @@ class App extends Component {
       results: [[]],
       current_results_page: 0,
       fields: [[]],
-      eventID: 167119,
+      eventID: 169123,
       eventName: null,
     };
   }
@@ -147,7 +147,7 @@ class App extends Component {
             className="column has-text-centered is-one-quarter"
           >
             <img
-              src={winter}
+              src={froyo}
               style={{ marginTop: "20px", width: "300px" }}
               alt=""
               key="eventImage"
@@ -157,7 +157,7 @@ class App extends Component {
               style={{ marginTop: "20px" }}
               key="eventName"
             >
-              Lucky Clover Run
+              ZOYO FroYo 5K
             </h1>
             <h2 className="subtitle is-5" key="eventResults">
               Results
