@@ -21,7 +21,7 @@ class App extends Component {
       results: [[]],
       current_results_page: 0,
       fields: [[]],
-      eventID: 169123,
+      eventID: 169844,
       eventName: null,
     };
   }
@@ -147,7 +147,7 @@ class App extends Component {
             className="column has-text-centered is-one-quarter"
           >
             <img
-              src={froyo}
+              src="https://www.131events.com/wp-content/uploads/2021/02/cinco-logo-2021-no-words.jpg"
               style={{ marginTop: "20px", width: "300px" }}
               alt=""
               key="eventImage"
@@ -157,7 +157,7 @@ class App extends Component {
               style={{ marginTop: "20px" }}
               key="eventName"
             >
-              ZOYO FroYo 5K
+              Cinco de Miles 5K
             </h1>
             <h2 className="subtitle is-5" key="eventResults">
               Results
