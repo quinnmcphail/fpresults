@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
-import * as hah from "./froyo.svg";
+import * as hah from "./HaH.svg";
 import * as Logo from "./resultsBack.svg";
 import Repeat from "repeat";
 import ReactCSSTransitionReplace from "react-css-transition-replace";
