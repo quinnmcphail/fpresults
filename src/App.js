@@ -21,7 +21,7 @@ class App extends Component {
       results: [[]],
       current_results_page: 0,
       fields: [[]],
-      eventID: 182264,
+      eventID: 183566,
       eventName: null,
     };
   }
@@ -147,7 +147,7 @@ class App extends Component {
             className="column has-text-centered is-one-quarter"
           >
             <img
-              src={hakuna}
+              src="https://www.131events.com/wp-content/uploads/2021/04/dnf-logo.jpg"
               style={{ marginTop: "20px", width: "300px" }}
               alt=""
               key="eventImage"
@@ -157,7 +157,7 @@ class App extends Component {
               style={{ marginTop: "20px" }}
               key="eventName"
             >
-              Hakuna Mimosa 5K
+              DNF Trail Run
             </h1>
             <h2 className="subtitle is-5" key="eventResults">
               Results
