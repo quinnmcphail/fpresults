@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
-// import * as hakuna from "./hakuna.png";
+import * as donut from "./donut.png";
 import * as Logo from "./resultsBack.svg";
 import Repeat from "repeat";
 import ReactCSSTransitionReplace from "react-css-transition-replace";
@@ -21,7 +21,7 @@ class App extends Component {
       results: [[]],
       current_results_page: 0,
       fields: [[]],
-      eventID: 184823,
+      eventID: 185909,
       eventName: null,
     };
   }
@@ -147,7 +147,7 @@ class App extends Component {
             className="column has-text-centered is-one-quarter"
           >
             <img
-              src="https://www.az48marathon.com/wp-content/uploads/sites/3/2019/10/az48-logo-white.jpg"
+              src={donut}
               style={{ marginTop: "20px", width: "300px" }}
               alt=""
               key="eventImage"
@@ -157,7 +157,7 @@ class App extends Component {
               style={{ marginTop: "20px" }}
               key="eventName"
             >
-              Chandler #AZ48 Half Marathon & 5K
+              Donut Judge Me 5K
             </h1>
             <h2 className="subtitle is-5" key="eventResults">
               Results
