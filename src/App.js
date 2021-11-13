@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
-import * as donut from "./donut.png";
+import * as rum from "./rum.png";
 import * as Logo from "./resultsBack.svg";
 import Repeat from "repeat";
 import ReactCSSTransitionReplace from "react-css-transition-replace";
@@ -21,7 +21,7 @@ class App extends Component {
       results: [[]],
       current_results_page: 0,
       fields: [[]],
-      eventID: 185909,
+      eventID: 186430,
       eventName: null,
     };
   }
@@ -147,7 +147,7 @@ class App extends Component {
             className="column has-text-centered is-one-quarter"
           >
             <img
-              src={donut}
+              src={rum}
               style={{ marginTop: "20px", width: "300px" }}
               alt=""
               key="eventImage"
@@ -157,7 +157,7 @@ class App extends Component {
               style={{ marginTop: "20px" }}
               key="eventName"
             >
-              Donut Judge Me 5K
+              Rum Run 5K
             </h1>
             <h2 className="subtitle is-5" key="eventResults">
               Results
