@@ -21,7 +21,7 @@ class App extends Component {
       results: [[]],
       current_results_page: 0,
       fields: [[]],
-      eventID: 192294,
+      eventID: 193495,
       eventName: null,
     };
   }
@@ -157,7 +157,7 @@ class App extends Component {
               style={{ marginTop: "20px" }}
               key="eventName"
             >
-              Run4Love 5K
+              Winter Trail Frosty
             </h1>
             <h2 className="subtitle is-5" key="eventResults">
               Results
