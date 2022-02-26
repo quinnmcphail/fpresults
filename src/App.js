@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import * as Logo from "./resultsBack.svg";
-import * as r4l from "./run4love-tile.png";
+import * as wtf from "./wtfLogo.png";
 import Repeat from "repeat";
 import ReactCSSTransitionReplace from "react-css-transition-replace";
 
@@ -147,7 +147,7 @@ class App extends Component {
             className="column has-text-centered is-one-quarter"
           >
             <img
-              src={r4l}
+              src={wtf}
               style={{ marginTop: "20px", width: "300px" }}
               alt=""
               key="eventImage"
