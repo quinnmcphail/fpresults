@@ -157,7 +157,7 @@ class App extends Component {
               style={{ marginTop: "20px" }}
               key="eventName"
             >
-              ZOYO FroYo 5K
+              Honor the Brave 5K
             </h1>
             <h2 className="subtitle is-5" key="eventResults">
               Results
