@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import * as Logo from "./resultsBack.svg";
-import * as shePower from "./shePower.png";
+import * as summerNight from "./summerNight.png";
 import Repeat from "repeat";
 import ReactCSSTransitionReplace from "react-css-transition-replace";
 
@@ -21,7 +21,7 @@ class App extends Component {
       results: [[]],
       current_results_page: 0,
       fields: [[]],
-      eventID: 208797,
+      eventID: 209605,
       eventName: null,
     };
   }
@@ -147,7 +147,7 @@ class App extends Component {
             className="column has-text-centered is-one-quarter"
           >
             <img
-              src={ shePower }
+              src={ summerNight }
               style={{ marginTop: "20px", width: "300px" }}
               alt=""
               key="eventImage"
@@ -157,7 +157,7 @@ class App extends Component {
               style={{ marginTop: "20px" }}
               key="eventName"
             >
-              SHE Power Half &amp; 5K
+              Summer Night Trail Run
             </h1>
             <h2 className="subtitle is-5" key="eventResults">
               Results
