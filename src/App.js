@@ -21,7 +21,7 @@ class App extends Component {
       results: [[]],
       current_results_page: 0,
       fields: [[]],
-      eventID: 224752,
+      eventID: 227263,
       eventName: null,
     };
   }
@@ -147,7 +147,7 @@ class App extends Component {
             className="column has-text-centered is-one-quarter"
           >
             <img
-              src="https://www.131events.com/wp-content/uploads/2022/07/brew-2022-logo.jpeg"
+              src="https://www.131events.com/wp-content/uploads/2022/06/strut-gnome-2022.png"
               style={{ marginTop: "20px", width: "300px" }}
               alt=""
               key="eventImage"
@@ -157,7 +157,7 @@ class App extends Component {
               style={{ marginTop: "20px" }}
               key="eventName"
             >
-              Brew HaHa 5K
+              Strut Your Stuffing 5K
             </h1>
             <h2 className="subtitle is-5" key="eventResults">
               Results
