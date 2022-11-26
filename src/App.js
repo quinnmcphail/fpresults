@@ -147,7 +147,7 @@ class App extends Component {
             className="column has-text-centered is-one-quarter"
           >
             <img
-              src="https://www.131events.com/wp-content/uploads/2022/09/move-your-boom.png"
+              src="https://hangdogrunning.com/wp-content/uploads/boom-icon.jpg"
               style={{ marginTop: "20px", width: "300px" }}
               alt=""
               key="eventImage"
