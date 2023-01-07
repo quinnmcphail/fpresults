@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import * as Logo from "./resultsBack.svg";
-import * as caribbean from "./caribbean.jpg";
+//import * as caribbean from "./caribbean.jpg";
 import Repeat from "repeat";
 import ReactCSSTransitionReplace from "react-css-transition-replace";
 
