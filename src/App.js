@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import * as Logo from "./resultsBack.svg";
-//import * as caribbean from "./caribbean.jpg";
+import * as shePower from "./shePower.png";
 import Repeat from "repeat";
 import ReactCSSTransitionReplace from "react-css-transition-replace";
 
@@ -21,7 +21,7 @@ class App extends Component {
       results: [[]],
       current_results_page: 0,
       fields: [[]],
-      eventID: 230491,
+      eventID: 231724,
       eventName: null,
     };
   }
@@ -147,7 +147,7 @@ class App extends Component {
             className="column has-text-centered is-one-quarter"
           >
             <img
-              src="https://www.131events.com/wp-content/uploads/2022/10/winter-night-shirt-logo.jpg"
+              src={shePower}
               style={{ marginTop: "20px", width: "300px" }}
               alt=""
               key="eventImage"
@@ -157,7 +157,7 @@ class App extends Component {
               style={{ marginTop: "20px" }}
               key="eventName"
             >
-              Winter Night Trail Run
+              SHE Power Half Marathon & 5K
             </h1>
             <h2 className="subtitle is-5" key="eventResults">
               Results
