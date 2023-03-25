@@ -21,7 +21,7 @@ class App extends Component {
       results: [[]],
       current_results_page: 0,
       fields: [[]],
-      eventID: 237676,
+      eventID: 238391,
       eventName: null,
     };
   }
@@ -147,7 +147,7 @@ class App extends Component {
             className="column has-text-centered is-one-quarter"
           >
             <img
-              src="https://www.131events.com/wp-content/uploads/2022/12/131-lucky-icon.png"
+              src="https://www.131events.com/wp-content/uploads/2022/12/shot-logo-2023.png"
               style={{ marginTop: "20px", width: "300px" }}
               alt=""
               key="eventImage"
@@ -157,7 +157,7 @@ class App extends Component {
               style={{ marginTop: "20px" }}
               key="eventName"
             >
-              Lucky Clover 5K
+              Shot in the Dark Whiskey Run
             </h1>
             <h2 className="subtitle is-5" key="eventResults">
               Results
