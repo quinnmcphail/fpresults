@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import * as Logo from "./resultsBack.svg";
-import * as SHE from "./shePower.png";
+//import * as SHE from "./shePower.png";
 import Repeat from "repeat";
 import ReactCSSTransitionReplace from "react-css-transition-replace";
 
@@ -21,7 +21,7 @@ class App extends Component {
       results: [[]],
       current_results_page: 0,
       fields: [[]],
-      eventID: 264855,
+      eventID: 266966,
       eventName: null,
     };
   }
@@ -147,7 +147,7 @@ class App extends Component {
             className="column has-text-centered is-one-quarter"
           >
             <img
-              src={SHE}
+              src="https://www.az48marathon.com/wp-content/uploads/sites/3/2023/02/az48-2023-textured-icon.jpg"
               style={{ marginTop: "20px", width: "300px" }}
               alt=""
               key="eventImage"
@@ -157,7 +157,7 @@ class App extends Component {
               style={{ marginTop: "20px" }}
               key="eventName"
             >
-              SHE Power 10K &amp; 5K
+              AZ48 Half Marathon &amp; 5K
             </h1>
             <h2 className="subtitle is-5" key="eventResults">
               Results
