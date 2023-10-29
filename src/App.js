@@ -21,7 +21,7 @@ class App extends Component {
       results: [[]],
       current_results_page: 0,
       fields: [[]],
-      eventID: 266966,
+      eventID: 267643,
       eventName: null,
     };
   }
@@ -147,7 +147,7 @@ class App extends Component {
             className="column has-text-centered is-one-quarter"
           >
             <img
-              src="https://www.az48marathon.com/wp-content/uploads/sites/3/2023/02/az48-2023-textured-icon.jpg"
+              src="https://www.131events.com/wp-content/uploads/2019/06/brew-halloween-logo-2019.jpg"
               style={{ marginTop: "20px", width: "300px" }}
               alt=""
               key="eventImage"
@@ -157,7 +157,7 @@ class App extends Component {
               style={{ marginTop: "20px" }}
               key="eventName"
             >
-              AZ48 Half Marathon &amp; 5K
+              Brew HaHa 5K
             </h1>
             <h2 className="subtitle is-5" key="eventResults">
               Results
