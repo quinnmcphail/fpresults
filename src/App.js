@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import * as Logo from "./resultsBack.svg";
-import * as SHE from "./carribean.jpg";
+import * as SHE from "./caribbean.jpg";
 import Repeat from "repeat";
 import ReactCSSTransitionReplace from "react-css-transition-replace";
 
@@ -157,7 +157,7 @@ class App extends Component {
               style={{ marginTop: "20px" }}
               key="eventName"
             >
-              Carribean Christmas 5K
+              Caribbean Christmas 5K
             </h1>
             <h2 className="subtitle is-5" key="eventResults">
               Results
