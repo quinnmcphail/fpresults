@@ -147,7 +147,7 @@ class App extends Component {
             className="column has-text-centered is-one-quarter"
           >
             <img
-              src={{SHE}}
+              src={SHE}
               style={{ marginTop: "20px", width: "300px" }}
               alt=""
               key="eventImage"
