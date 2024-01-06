@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import * as Logo from "./resultsBack.svg";
-import * as SHE from "./caribbean.jpg";
+//import * as SHE from "./caribbean.jpg";
 import Repeat from "repeat";
 import ReactCSSTransitionReplace from "react-css-transition-replace";
 
@@ -21,7 +21,7 @@ class App extends Component {
       results: [[]],
       current_results_page: 0,
       fields: [[]],
-      eventID: 272330,
+      eventID: 273628,
       eventName: null,
     };
   }
@@ -147,7 +147,7 @@ class App extends Component {
             className="column has-text-centered is-one-quarter"
           >
             <img
-              src={SHE}
+              src="https://www.131events.com/wp-content/uploads/2023/08/2024-winter-logo-glitter.jpg"
               style={{ marginTop: "20px", width: "300px" }}
               alt=""
               key="eventImage"
@@ -157,7 +157,7 @@ class App extends Component {
               style={{ marginTop: "20px" }}
               key="eventName"
             >
-              Caribbean Christmas 5K
+              Winter Night Trail Run
             </h1>
             <h2 className="subtitle is-5" key="eventResults">
               Results
