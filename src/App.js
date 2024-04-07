@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import * as Logo from "./resultsBack.svg";
-import * as SHE from "./lucky.jpg";
+import * as SHE from "./hakuna.png";
 import Repeat from "repeat";
 import ReactCSSTransitionReplace from "react-css-transition-replace";
 
@@ -21,7 +21,7 @@ class App extends Component {
       results: [[]],
       current_results_page: 0,
       fields: [[]],
-      eventID: 282157,
+      eventID: 284715,
       eventName: null,
     };
   }
@@ -157,7 +157,7 @@ class App extends Component {
               style={{ marginTop: "20px" }}
               key="eventName"
             >
-              Lucky Clover 5K
+              Hakuna Mimosa 5K
             </h1>
             <h2 className="subtitle is-5" key="eventResults">
               Results
