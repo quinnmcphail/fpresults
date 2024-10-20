@@ -21,7 +21,7 @@ class App extends Component {
       results: [[]],
       current_results_page: 0,
       fields: [[]],
-      eventID: 311337,
+      eventID: 314157,
       eventName: null,
     };
   }
@@ -147,7 +147,7 @@ class App extends Component {
             className="column has-text-centered is-one-quarter"
           >
             <img
-              src="https://www.131events.com/wp-content/uploads/2017/11/zoyo-logo-900-e1611171914243.jpg"
+              src="https://www.az48marathon.com/wp-content/uploads/sites/3/2024/02/az48-2024-logo.png"
               style={{ marginTop: "20px", width: "300px" }}
               alt=""
               key="eventImage"
@@ -157,7 +157,7 @@ class App extends Component {
               style={{ marginTop: "20px" }}
               key="eventName"
             >
-              ZOYO FroYo 5K
+              &num;AZ48 Half Marathon 10K &amp; 5K
             </h1>
             <h2 className="subtitle is-5" key="eventResults">
               Results
