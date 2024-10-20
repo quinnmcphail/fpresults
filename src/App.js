@@ -157,7 +157,7 @@ class App extends Component {
               style={{ marginTop: "20px" }}
               key="eventName"
             >
-              &num;AZ48 Half Marathon 10K &amp; 5K
+              #AZ48 Half Marathon 10K &amp; 5K
             </h1>
             <h2 className="subtitle is-5" key="eventResults">
               Results
