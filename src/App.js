@@ -21,7 +21,7 @@ class App extends Component {
       results: [[]],
       current_results_page: 0,
       fields: [[]],
-      eventID: 318944,
+      eventID: 321455,
       eventName: null,
     };
   }
@@ -147,7 +147,7 @@ class App extends Component {
             className="column has-text-centered is-one-quarter"
           >
             <img
-              src="https://hangdogrunning.com/wp-content/uploads/strut-2024-icon.jpg"
+              src="https://hangdogrunning.com/wp-content/uploads/caribbean-2024-icon-transparent.png"
               style={{ marginTop: "20px", width: "300px" }}
               alt=""
               key="eventImage"
@@ -157,7 +157,7 @@ class App extends Component {
               style={{ marginTop: "20px" }}
               key="eventName"
             >
-              Strut Your Stuffing 5K
+              Caribbean Christmas 5K
             </h1>
             <h2 className="subtitle is-5" key="eventResults">
               Results
