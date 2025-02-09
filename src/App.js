@@ -21,7 +21,7 @@ class App extends Component {
       results: [[]],
       current_results_page: 0,
       fields: [[]],
-      eventID: 324703,
+      eventID: 326117,
       eventName: null,
     };
   }
@@ -147,7 +147,7 @@ class App extends Component {
             className="column has-text-centered is-one-quarter"
           >
             <img
-              src="https://shepower.run/wp-content/uploads/2022/07/2025-shepower-icon.jpg"
+              src="https://www.131events.com/wp-content/uploads/2024/12/r4l-2025-logo.png"
               style={{ marginTop: "20px", width: "300px" }}
               alt=""
               key="eventImage"
@@ -157,7 +157,7 @@ class App extends Component {
               style={{ marginTop: "20px" }}
               key="eventName"
             >
-              SHE Power 10K &amp; 5K
+              Run4Love 5K
             </h1>
             <h2 className="subtitle is-5" key="eventResults">
               Results
