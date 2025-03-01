@@ -21,7 +21,7 @@ class App extends Component {
       results: [[]],
       current_results_page: 0,
       fields: [[]],
-      eventID: 327933,
+      eventID: 329199,
       eventName: null,
     };
   }
@@ -147,7 +147,7 @@ class App extends Component {
             className="column has-text-centered is-one-quarter"
           >
             <img
-              src="https://hangdogrunning.com/wp-content/uploads/wtf-icon-2025.jpg"
+              src="https://hangdogrunning.com/wp-content/uploads/boom-icon-1.jpg"
               style={{ marginTop: "20px", width: "300px" }}
               alt=""
               key="eventImage"
@@ -157,7 +157,7 @@ class App extends Component {
               style={{ marginTop: "20px" }}
               key="eventName"
             >
-              Winter Trail Frosty
+              BOOM Shakalaka Endurance Relay
             </h1>
             <h2 className="subtitle is-5" key="eventResults">
               Results
