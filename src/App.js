@@ -53,6 +53,7 @@ class App extends Component {
           resultsArray = e.data.data.map((e) => {
             let temp = e;
             temp.splice(1,1);
+            [temp[0], temp[1]] = [temp[1], temp[0]];
             if (temp[3] === "-1") {
               temp[3] = "TOP OVERALL";
             }
