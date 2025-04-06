@@ -21,7 +21,7 @@ class App extends Component {
       results: [[]],
       current_results_page: 0,
       fields: [[]],
-      eventID: 330927,
+      eventID: 333723,
       eventName: null,
     };
   }
@@ -148,7 +148,7 @@ class App extends Component {
             className="column has-text-centered is-one-quarter"
           >
             <img
-              src="https://hangdogrunning.com/wp-content/uploads/2025-lucky-icon.jpg"
+              src="https://hangdogrunning.com/wp-content/uploads/rum-rum-2025-icon.jpg"
               style={{ marginTop: "20px", width: "300px" }}
               alt=""
               key="eventImage"
@@ -158,7 +158,7 @@ class App extends Component {
               style={{ marginTop: "20px" }}
               key="eventName"
             >
-              Lucky Clover 5K
+              Rum Run 5K
             </h1>
             <h2 className="subtitle is-5" key="eventResults">
               Results
