@@ -21,7 +21,7 @@ class App extends Component {
       results: [[]],
       current_results_page: 0,
       fields: [[]],
-      eventID: 341281,
+      eventID: 350796,
       eventName: null,
     };
   }
@@ -148,7 +148,7 @@ class App extends Component {
             className="column has-text-centered is-one-quarter"
           >
             <img
-              src="https://shepower.run/wp-content/uploads/2022/07/2025-shepower-icon.jpg"
+              src="https://hangdogrunning.com/wp-content/uploads/summer-logo-2025.jpg"
               style={{ marginTop: "20px", width: "300px" }}
               alt=""
               key="eventImage"
@@ -158,7 +158,7 @@ class App extends Component {
               style={{ marginTop: "20px" }}
               key="eventName"
             >
-              SHE Power 10K &amp; 5K
+              Summer Night Trail Run
             </h1>
             <h2 className="subtitle is-5" key="eventResults">
               Results
