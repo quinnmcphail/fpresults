@@ -21,7 +21,7 @@ class App extends Component {
       results: [[]],
       current_results_page: 0,
       fields: [[]],
-      eventID: 350796,
+      eventID: 365144,
       eventName: null,
     };
   }
@@ -148,7 +148,7 @@ class App extends Component {
             className="column has-text-centered is-one-quarter"
           >
             <img
-              src="https://hangdogrunning.com/wp-content/uploads/summer-logo-2025.jpg"
+              src="https://hangdogrunning.com/wp-content/uploads/djm-gilbert-icon.jpg"
               style={{ marginTop: "20px", width: "300px" }}
               alt=""
               key="eventImage"
@@ -158,7 +158,7 @@ class App extends Component {
               style={{ marginTop: "20px" }}
               key="eventName"
             >
-              Summer Night Trail Run
+              Donut Judge Me 5K
             </h1>
             <h2 className="subtitle is-5" key="eventResults">
               Results
