@@ -21,7 +21,7 @@ class App extends Component {
       results: [[]],
       current_results_page: 0,
       fields: [[]],
-      eventID: 365144,
+      eventID: 365145,
       eventName: null,
     };
   }
@@ -148,7 +148,7 @@ class App extends Component {
             className="column has-text-centered is-one-quarter"
           >
             <img
-              src="https://hangdogrunning.com/wp-content/uploads/djm-gilbert-icon.jpg"
+              src="https://hangdogrunning.com/wp-content/uploads/djm-orovalley-icon.jpg"
               style={{ marginTop: "20px", width: "300px" }}
               alt=""
               key="eventImage"
